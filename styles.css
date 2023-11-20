@@ -1,0 +1,90 @@
+*{
+    font-size: x-large;
+    font-family: Cambria, Georgia, Times, serif;
+}
+
+body{
+    background-color: #220088;
+    color: #cccccc;
+}
+
+#input{
+    display: flex;
+}
+#input > div{
+    padding: 0.3rem;
+}
+
+#input-display{
+    background-color: white;
+}
+
+#standard-input-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3em;
+    margin: 0.3rem 0;
+}
+#extended-input-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3em;
+    margin: 0.3rem 0;
+}
+
+#calculator-type{
+    margin: 0.3em 0em;
+    outline: #888888 1px solid;
+    height: 2em;
+}
+
+button{
+    border: none;
+    width: 2.4em;
+    height: 2em;
+    outline: #888888 2px solid;
+}
+button:hover{
+    background-color: #ff88ff;
+    outline-color: #8844cc;
+}
+button:active{
+    background-color: #c466e6;
+    outline-color: #8844cc;
+}
+
+#history{
+    width: 75%;
+    background-color: white;
+    color: black;
+    outline: #888888 2px solid;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.section{
+    padding: 0.3em 1em;
+}
+.section:nth-child(2n){
+    background-color: #cccccc;
+}
+.section:hover{
+    background-color: #ff88ff;
+}
+.section:active{
+    background-color: #c466e6;
+}
+
+.input{
+    text-align: left;
+    padding: 0.3em 0em 0em 0em;
+}
+.output{
+    text-align: right;
+    padding: 0em 0em 0.3em 0em;
+}
+
+sup{
+    font-size: 0.8em;
+}
